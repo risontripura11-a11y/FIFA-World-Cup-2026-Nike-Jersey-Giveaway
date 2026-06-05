@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Barlow:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Barlow", sans-serif;
+  --font-condensed: "Barlow Condensed", sans-serif;
+  --font-bebas: "Bebas Neue", sans-serif;
+  
+  --color-gold: #F5C518;
+  --color-gold2: #FFE066;
+  --color-red: #D0021B;
+  --color-navy: #0A0E1A;
+  --color-navy-light: #151C33;
+  --color-accent: #00C2FF;
+  --color-nike: #FF6B00;
+  --color-grass: #1A7A3C;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes float-gentle {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(2deg); }
+}
+
+@keyframes float-stagger-1 {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(-3deg); }
+}
+
+@keyframes float-stagger-2 {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(4deg); }
+}
+
+@keyframes gold-pulse {
+  0%, 100% { box-shadow: 0 0 15px rgba(245, 197, 24, 0.25), inset 0 0 15px rgba(245, 197, 24, 0.1); border-color: rgba(245, 197, 24, 0.4); }
+  50% { box-shadow: 0 0 30px rgba(245, 197, 24, 0.55), inset 0 0 25px rgba(245, 197, 24, 0.25); border-color: rgba(245, 197, 24, 0.8); }
+}
+
+@keyframes confetti-fall {
+  0% { transform: translateY(-10px) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+}
+
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.animate-float-gentle {
+  animation: float-gentle 4s ease-in-out infinite;
+}
+
+.animate-float-stagger-1 {
+  animation: float-stagger-1 5s ease-in-out infinite;
+}
+
+.animate-float-stagger-2 {
+  animation: float-stagger-2 4.5s ease-in-out infinite;
+}
+
+.animate-gold-pulse {
+  animation: gold-pulse 3s ease-in-out infinite;
+}
+
+/* Custom styles for ticket and glow effects */
+.glow-gold {
+  box-shadow: 0 0 15px rgba(245, 197, 24, 0.35);
+}
+
+.glow-nike {
+  box-shadow: 0 0 20px rgba(255, 107, 0, 0.4);
+}
+
+.ticket-clip-left {
+  clip-path: radial-gradient(circle at 0px 50%, transparent 12px, white 13px);
+}
+
+.ticket-clip-right {
+  clip-path: radial-gradient(circle at 100% 50%, transparent 12px, white 13px);
+}
+

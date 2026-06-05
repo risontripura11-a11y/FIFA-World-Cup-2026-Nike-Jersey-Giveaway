@@ -1,0 +1,6 @@
+{
+  "name": "FIFA World Cup 2026 - Nike Jersey Giveaway",
+  "description": "Interactive Nike Jersey customizer and ticket giveaway campaign for the FIFA World Cup 2026 by @tripurasujanbd.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
